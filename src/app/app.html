@@ -1,0 +1,46 @@
+<div id="login-container">
+  <div class="login-tab" id="login-form-container">
+    <div id="login-form-content">
+      <div id="main-form-login">
+        <div id="welcome-logo-container">
+          <img alt="logo" src="./assets/logo.png" width="116">
+          <h2>Koala</h2>
+        </div>
+        <form [formGroup]="loginForm" id="login-form">
+          <div class="input-item-container">
+            <label for="email">Email</label>
+            <p-iconfield>
+                <p-inputicon class="pi pi-envelope" />
+                <input pInputText type="text" id="email" placeholder="john@doe.com" formControlName="email" class="login-text-box"/>
+            </p-iconfield>  
+          </div>
+          
+          <div id="passwrod-login-input-container" class="input-item-container">
+            <label for="email">Password</label>
+            <p-iconfield>
+                <p-inputicon class="pi pi-lock" />
+                <input pInputText type="password" passwordCharacter="*" id="email" placeholder="**********" formControlName="email" class="login-text-box"/>
+            </p-iconfield>
+          </div>
+         
+          <div id="forgot-pass-check">
+              <div class="flex items-center">
+                <p-checkbox inputId="remember" [binary]="true" />
+                <label for="remember" class="ml-2"> &nbsp; Remember Login </label>
+              </div>
+              <a href="someone.com" class="green-link">Forgot Password?</a>
+          </div>
+          <button pButton type="button" id="login-button">Login</button>
+        </form>
+      </div>
+
+      <div id="create-account-dir">Don't have an account yet? <a class="green-link">Create an account</a></div>
+    </div>
+  </div>
+  <div class="login-tab" id="login-welcome-content" >
+    
+        <img src="./assets/svgs/login-welcome.svg" alt="welcome display" height="339" width="337" />
+      <h1>Hey, Welcome!</h1>
+      <p style="width: 70%;">Lorem ipsum dolor sit amet consectetur. At et eros tempus id vel urna id orci gravida. Sodales morbi libero in pellentesque rhoncus mus erat.</p>    
+  </div>
+</div>
