@@ -17,7 +17,7 @@ export class App {
 
   loginForm: FormGroup;
   constructor(fb: FormBuilder) {
-    this.loginForm = fb.group({
+    this.loginForm = fb.group({ 
       email: [''],
       password: ['']
     });
